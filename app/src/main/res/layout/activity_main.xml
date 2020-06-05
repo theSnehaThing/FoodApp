@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food9"
+    tools:context="com.example.user.foodapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FoodApp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons"
+        android:layout_centerHorizontal="true"
+        android:text="One cannot think well,love well,sleep well,
+               if one has not dined well"
+        android:textAlignment="center"
+        android:textColor="#fbfbfc"
+        android:textSize="17dp"
+        android:textStyle="italic" />
+
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="@string/SignUp"
+            android:background="#629e19"
+            android:textColor="#fcfbfb"
+            android:shadowColor="@android:color/black"
+            android:onClick="signUp"/>
+
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#14a720"
+            android:text="@string/SignIn"
+            android:textColor="#ffffff"
+            android:shadowColor="@android:color/black"
+            android:onClick="signIn"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
